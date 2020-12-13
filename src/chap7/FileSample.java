@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class FileSample {
 	public static void main(String[] args) {
-		File file = new File("sample.txt");
+		File file = new File("out.ser");
 		try {
 			System.out.println(file.createNewFile());
 			System.out.println(file.exists());
