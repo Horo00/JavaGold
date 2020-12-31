@@ -8,8 +8,18 @@ public class Q16 {
 				
 
 		
-		Function<String, String> function = foo.doIt((Integer x) -> x + "$");
+		Function<String, String> function = foo.doIt((Integer y) -> y + "$");
 		
 		System.out.println(function.apply("abc"));
+		
+//		Foo foo = new Foo() {
+//			
+//			@Override
+//			public Function<String, String> doIt(Function<Integer, String> func) {
+//				return x -> "#" + func.apply(x.length());
+//			}
+//		};
+//		
+//		System.out.println(foo.doIt(x -> x + "$").apply("ABC"));
 	}
 }
