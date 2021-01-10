@@ -7,14 +7,14 @@ import java.util.stream.Stream;
 
 public class GenerateSample {
 	public static void main(String[] args) {
-		List<Integer> list = Stream.generate(() -> new Random().nextInt(43)+1)
+		List<Integer> list = Stream.generate(() -> 
+		new Random().nextInt(43)+1)
 			.distinct()
 			.limit(6)
 			.sorted()
 			.collect(Collectors.toList());
 		
 		for (Integer integer : list) {
-			
 			System.out.println(integer);
 		}
 //
